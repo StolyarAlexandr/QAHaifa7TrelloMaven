@@ -28,8 +28,9 @@ public class DataProviders {
     }
 
     @DataProvider
-    public static Iterator<Object[]> dataProviderLoginIncorect() throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class.getResourceAsStream("/loginIncorect.data")));
+    public static Iterator<Object[]> loginIncorect() throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(DataProviders.class
+                .getResourceAsStream("/loginIncorect.data")));
         List<Object[]> userData = new ArrayList();
 
         for(String line = in.readLine(); line != null; line = in.readLine()) {
@@ -75,7 +76,6 @@ public class DataProviders {
         for(int i = 0; i < 4; ++i) {
             data.add(new Object[]{this.generateRandomName(),this.generateRandomPassword()});
         }
-
         return data.iterator();
     }
 

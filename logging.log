@@ -1,0 +1,54 @@
+2020-10-23 08:44:44 INFO  LogLog4j:42 - LoginTests:@BeforeMethod initTests()
+2020-10-23 08:44:46 INFO  LogLog4j:16 - 
+2020-10-23 08:44:46 INFO  LogLog4j:17 - 
+2020-10-23 08:44:46 INFO  LogLog4j:18 - *******************************************************************
+2020-10-23 08:44:46 INFO  LogLog4j:19 -                    Test Case: loginNegativeLoginIncorrect()
+2020-10-23 08:44:46 INFO  LogLog4j:20 - *******************************************************************
+2020-10-23 08:44:46 INFO  LogLog4j:42 - Parameter login -
+2020-10-23 08:44:46 INFO  LogLog4j:42 - Parameter password -46094609
+2020-10-23 08:44:46 INFO  LogLog4j:42 - Parameter errorMessage -Missing email
+2020-10-23 08:44:46 INFO  LogLog4j:42 - LoginPageHelper: loginNotAttlassian(login=, password=46094609)
+2020-10-23 08:44:46 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianLogin(login=)
+2020-10-23 08:44:46 INFO  LogLog4j:42 - ---Enter login value to the login field
+2020-10-23 08:44:46 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianPassword(password=46094609)
+2020-10-23 08:44:46 INFO  LogLog4j:42 - ---Enter password value to the password field----
+2020-10-23 08:44:46 INFO  LogLog4j:42 - LoginPageHelper: pressLoginButton()
+2020-10-23 08:44:46 INFO  LogLog4j:42 - ----Wait 5 sec---
+2020-10-23 08:44:51 INFO  LogLog4j:42 - Click on the login button
+2020-10-23 08:44:53 INFO  LogLog4j:42 - -----Test case was finished-------
+2020-10-23 08:44:59 INFO  LogLog4j:42 - LoginTests:@BeforeMethod initTests()
+2020-10-23 08:45:01 INFO  LogLog4j:16 - 
+2020-10-23 08:45:01 INFO  LogLog4j:17 - 
+2020-10-23 08:45:01 INFO  LogLog4j:18 - *******************************************************************
+2020-10-23 08:45:01 INFO  LogLog4j:19 -                    Test Case: loginNegativeLoginIncorrect()
+2020-10-23 08:45:01 INFO  LogLog4j:20 - *******************************************************************
+2020-10-23 08:45:01 INFO  LogLog4j:42 - Parameter login -pupkin
+2020-10-23 08:45:01 INFO  LogLog4j:42 - Parameter password -460858585
+2020-10-23 08:45:01 INFO  LogLog4j:42 - Parameter errorMessage -There isn't an account for this username
+2020-10-23 08:45:01 INFO  LogLog4j:42 - LoginPageHelper: loginNotAttlassian(login=pupkin, password=460858585)
+2020-10-23 08:45:01 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianLogin(login=pupkin)
+2020-10-23 08:45:01 INFO  LogLog4j:42 - ---Enter login value to the login field
+2020-10-23 08:45:01 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianPassword(password=460858585)
+2020-10-23 08:45:01 INFO  LogLog4j:42 - ---Enter password value to the password field----
+2020-10-23 08:45:02 INFO  LogLog4j:42 - LoginPageHelper: pressLoginButton()
+2020-10-23 08:45:02 INFO  LogLog4j:42 - ----Wait 5 sec---
+2020-10-23 08:45:07 INFO  LogLog4j:42 - Click on the login button
+2020-10-23 08:45:09 INFO  LogLog4j:42 - -----Test case was finished-------
+2020-10-23 08:45:15 INFO  LogLog4j:42 - LoginTests:@BeforeMethod initTests()
+2020-10-23 08:45:17 INFO  LogLog4j:16 - 
+2020-10-23 08:45:17 INFO  LogLog4j:17 - 
+2020-10-23 08:45:17 INFO  LogLog4j:18 - *******************************************************************
+2020-10-23 08:45:17 INFO  LogLog4j:19 -                    Test Case: loginNegativeLoginIncorrect()
+2020-10-23 08:45:17 INFO  LogLog4j:20 - *******************************************************************
+2020-10-23 08:45:17 INFO  LogLog4j:42 - Parameter login -pupkin@mail.ru
+2020-10-23 08:45:17 INFO  LogLog4j:42 - Parameter password -654958659
+2020-10-23 08:45:17 INFO  LogLog4j:42 - Parameter errorMessage -There isn't an account for this email
+2020-10-23 08:45:17 INFO  LogLog4j:42 - LoginPageHelper: loginNotAttlassian(login=pupkin@mail.ru, password=654958659)
+2020-10-23 08:45:17 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianLogin(login=pupkin@mail.ru)
+2020-10-23 08:45:17 INFO  LogLog4j:42 - ---Enter login value to the login field
+2020-10-23 08:45:17 INFO  LogLog4j:42 - LoginPageHelper: enterNotAttlassianPassword(password=654958659)
+2020-10-23 08:45:17 INFO  LogLog4j:42 - ---Enter password value to the password field----
+2020-10-23 08:45:18 INFO  LogLog4j:42 - LoginPageHelper: pressLoginButton()
+2020-10-23 08:45:18 INFO  LogLog4j:42 - ----Wait 5 sec---
+2020-10-23 08:45:23 INFO  LogLog4j:42 - Click on the login button
+2020-10-23 08:45:25 INFO  LogLog4j:42 - -----Test case was finished-------

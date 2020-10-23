@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 
 import org.example.SuiteConfiguration;
+import org.example.util.LogLog4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 
@@ -23,6 +24,8 @@ public class TestBase {
 
   public static final String LOGIN = "alexandrqa7@gmail.com";
   public static final String PASSWORD = "46094609";
+
+  public static LogLog4j log4j = new LogLog4j();
 
   protected static URL gridHubUrl = null;
   protected static String baseUrl;

@@ -15,6 +15,7 @@ public class LoginTests extends TestBase {
 
     @BeforeMethod
     public void initTests() {
+        log4j.info("LoginTests:@BeforeMethod initTests()");
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
         //loginPage = new LoginPageHelper(driver);
         boardsPage = PageFactory.initElements(driver, BoardsPageHelper.class);
@@ -24,17 +25,33 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void loginNegativeLoginEmpty() {loginPage.loginNotAttlassian("",PASSWORD).pressLoginButton();
+    public void loginNegativeLoginEmpty()    {
+        log4j.startTestCase("loginNegativeLoginEmpty()");
+        loginPage.loginNotAttlassian("",PASSWORD).pressLoginButton();
+        log4j.info("-----Test case was finished-------");
         Assert.assertEquals(loginPage.getErrorMessage(),"Missing email",
                 "The text of the error message is not correct");
     }
 
-    @Test(dataProviderClass = DataProviders.class,dataProvider = "dataProviderLoginIncorect")
-    public void loginNegativeLoginIncorrect(String login, String password) {
+    @Test(dataProviderClass = DataProviders.class,dataProvider = "loginIncorect")
+    public void loginNegativeLoginIncorrect(String login, String password, String errorMessage) {
+        log4j.startTestCase("loginNegativeLoginIncorrect()");
+        log4j.info("Parameter login -"+ login);
+        log4j.info("Parameter password -"+ password);
+        log4j.info("Parameter errorMessage -"+ errorMessage);
+        loginPage.loginNotAttlassian(login, password);
+
+        Assert.assertEquals(loginPage.getErrorMessage(),errorMessage,
+                "The error message is not  '"+ errorMessage+"'");
+        log4j.info("-----Test case was finished-------");
+    }
+
+    @Test(dataProviderClass = DataProviders.class,dataProvider = "dataProviderThird")
+    public void loginNegativeLoginIncorrect2(String login, String password) {
         loginPage.loginNotAttlassian(login, password);
 
         Assert.assertEquals(loginPage.getErrorMessage(),"There isn't an account for this email",
-                "The error message is not 'There isn't an account for this username'");
+                "The error message is not  '"+ "There isn't an account for this email"+"'");
     }
 
     @Test

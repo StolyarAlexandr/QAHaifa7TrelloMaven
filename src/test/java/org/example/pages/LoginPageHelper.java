@@ -57,18 +57,30 @@ public class LoginPageHelper extends PageBase{
     }
 
     public LoginPageHelper pressLoginButton() {
-        waitUntilElementIsClickable(loginButton,10);
+        //waitUntilElementIsClickable(loginButton,10);
+        log4j.info("LoginPageHelper: pressLoginButton()");
+        log4j.info("----Wait 5 sec---");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        log4j.info("Click on the login button");
         loginButton.click();
         return this;
     }
 
     public LoginPageHelper enterNotAttlassianPassword(String password) {
+        log4j.info("LoginPageHelper: enterNotAttlassianPassword(password="+password+")");
+        log4j.info("---Enter password value to the password field----");
         editField(passwordField,password);
         return this;
     }
 
 
     public LoginPageHelper enterNotAttlassianLogin(String login) {
+        log4j.info("LoginPageHelper: enterNotAttlassianLogin(login="+login+")");
+        log4j.info("---Enter login value to the login field");
         editField(loginField,login);
         return this;
     }
@@ -89,6 +101,7 @@ public class LoginPageHelper extends PageBase{
         return this;
     }
     public LoginPageHelper loginNotAttlassian(String login, String password) {
+        log4j.info("LoginPageHelper: loginNotAttlassian(login="+login+", password="+password+")");
         enterNotAttlassianLogin(login);
         enterNotAttlassianPassword(password);
         pressLoginButton();
